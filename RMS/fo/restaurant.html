@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="restaurant.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Shiva Fancy Food</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="SFF" /></a>
+        <ul>
+          Shiva Fancy Food
+        </ul>
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="restaurant.html">Home</a></li>
+        <li><a href="rimages.html">Gallery</a></li>
+        <li><a href="rmenu.php">Menu</a></li>
+        <li><a href="rabout.html">About Us</a></li>
+        <li><a href="rservice.html">Services</a></li>
+        <li><a href="rfeedback.html">Feedback</a></li>
+        <li><a href="rcontact.html">Contact Us</a></li>
+        <!-- <li><a href="catering.html">Catering</a></li> -->
+        <!--             <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li>-->
+      </ul>
+    </nav>
+    <section id="banner">
+      <br /><br /><br /><br /><br /><br /><br />
+      <div class="banner-text">
+        <p>Welcome to Our Restaurant</p>
+        <h1>Shiva Fancy Food</h1>
+
+        <div class="banner-btn">
+          <!-- <a href="catering.html"><span></span>Catering</a> -->
+          <a href="rmenu.php"><span></span>Menu</a>
+        </div>
+      </div>
+      <!-- <div class="banner-subtext">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Shiva Fancy Food</p>
+        </div> -->
+    </section>
+    <section id="menu"></section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>SHIVA FANCY FOOD</h3>
+
+        <p class="footer-links">
+          <a href="restaurant.html" class="link-1">HOME</a>
+
+          <a href="rimages.html" class="link-2">GALLERY</a>
+
+          <a href="rmenu.php" class="link-3">MENU</a>
+
+          <a href="rabout.html" class="link-4">ABOUT US</a>
+
+          <a href="rservice.html" class="link-5">SERVICES</a>
+
+          <a href="rfeedback.html" class="link-6">FEEDBACK</a>
+
+          <a href="rcontact" class="link-7">CONTACT US</a>
+
+          <!-- <a href="catering.html" class="link-8">CATERING</a> -->
+        </p>
+        <p class="footer-company-name">SFF © 2022</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <a href="https://goo.gl/maps/SRQanP4iLrygm9Xv7" target="_blank"
+            ><p>
+              New Link Rd, Motilal Nagar I,<br />
+              Goregaon West, Mumbai, Maharashtra 400104
+            </p></a
+          >
+        </div>
+
+        <div>
+          <a href="Tel:+91 9136217150"
+            ><i class="fa fa-phone"></i>
+            <p>+91 9136217150</p></a
+          >
+        </div>
+        <div>
+          <i class="fa fa-whatsapp"></i>
+          <a href="https://wa.me/+919136217150" target="_blank"
+            ><p>+91 9136217150</p></a
+          >
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:ronvpatra999@gmail.com" target="_blank"
+              >Ronvpatra999@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span font-size="50px">About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener("click", () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach((link) => {
+          link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
